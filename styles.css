@@ -1,0 +1,147 @@
+/*====================
+Base Styles
+======================*/
+html {
+    box-sizing: border-box;
+    font-size: 100%;
+    overflow: hidden;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1, h2, h3, h4 {
+    margin-top: 0;
+  }
+  
+  body {
+    font-size: 20px;
+    color: firebrick;
+  }
+  
+  /*===================
+  Main Flex Container
+  =====================*/
+  .flexbox-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  /*Targets all flex items*/
+  .flexbox-item {
+    width: 350px;
+    min-height: 100px;
+    margin: 10px;
+    border: 2px solid #333;
+    background-color: #dfdfdf;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /*======================
+  Header Text
+  ========================*/
+  .pageTextContainer {
+  
+  }
+  .logoImg {
+  
+  }
+  
+  .mainText p {
+   font-size: 30px;
+  }
+  
+  .subNotice {
+    font-size: 18px;
+  }
+  
+  /*=======================
+  User Email Input Input
+  =========================*/
+  
+  .userEmail {
+   
+  }
+  
+  .errorContainer {
+    
+  }
+  
+  .userInput {
+  
+  }
+  
+  .inputEmail {
+    border-radius: 25px;
+    padding: 15px;
+    width: 250px;
+  }
+  
+  .errorMessage {
+    font-size: 14px;
+    font-weight: 300;
+  }
+  
+  .notifyButtonContainer {
+  
+  }
+  
+  .submitButton {
+    border-radius: 25px;
+    padding: 15px;
+    width: 250px;  
+  }
+  
+  /*===================
+  Main Image
+  =====================*/
+  
+  .mainImg {
+  
+  }
+  
+  /*====================
+  Social Links
+  ======================*/
+  .socialContainer {
+    display: flex;
+    justify-content: space-around;
+    width: 170px;
+  }
+  /*Centers Icons */
+  .socialContainer a i {
+    margin: 8px;
+  }
+  /*Icon Border  */
+  .socialContainer a {
+    border: 1.5px solid firebrick;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+  }
+  
+  /*====================
+  Copywrite  
+  ======================*/
+  .copywriteContainer {
+    margin: 0 auto;
+    width: 100%;
+    font-size: 12px;
+  }
+  
+  /* Applies desktop styles */
+  @media screen and (min-width: 375px){
+    .userEmail {
+        display: flex;
+    }
+    .copywriteContainer {
+        margin-top: 125px;
+    }
+  }
