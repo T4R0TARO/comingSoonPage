@@ -1,10 +1,21 @@
+/*======================
+ Custom Variables
+ ======================== */
+ :root {
+   --button-blue: hsl(223, 87%, 63%);
+   --border-blue: hsl(223, 100%, 88%);
+   --error-red: hsl(354, 100%, 66%);
+   --maintxt-gray:  hsl(0, 0%, 59%);
+   --socialicons-blue: hsl(209, 33%, 12%);
+ }
+
 /*====================
 Base Styles
 ======================*/
 html {
     box-sizing: border-box;
     font-size: 100%;
-    overflow: hidden;
+    height: 100%;
   }
   
   * {
@@ -18,7 +29,8 @@ html {
   
   body {
     font-size: 20px;
-    color: firebrick;
+    font-family: 'Libre Franklin', sans-serif;
+    height: 100vh;
   }
   
   /*===================
@@ -26,19 +38,19 @@ html {
   =====================*/
   .flexbox-container {
     display: flex;
+    min-height: 100vh;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly; 
     align-items: center;
     text-align: center;
+
   }
   
   /*Targets all flex items*/
   .flexbox-item {
-    width: 350px;
-    min-height: 100px;
-    margin: 10px;
-    border: 2px solid #333;
-    background-color: #dfdfdf;
+    /* margin: 10px; */
+    /* border: 2px solid #333; */
+    /* background-color: #dfdfdf; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -48,18 +60,31 @@ html {
   Header Text
   ========================*/
   .pageTextContainer {
-  
+    display: flex;
+    flex-direction: column;
   }
   .logoImg {
-  
+    margin-bottom: 50px;
   }
-  
+  .logoImg img {
+    
+  }
+  .mainText {
+    margin-bottom: 20px;
+  }
   .mainText p {
-   font-size: 30px;
+   font-size: 28px;
+   font-weight: 300;
+   color: var(--maintxt-gray);
+  }
+  .mainText p strong {
+    color: black;
+    font-weight: 600;
   }
   
   .subNotice {
-    font-size: 18px;
+    font-size: 14px;
+    margin-bottom: -40px;
   }
   
   /*=======================
@@ -71,40 +96,79 @@ html {
   }
   
   .errorContainer {
-    
+    margin-bottom: 10px;
   }
   
   .userInput {
-  
+    display: flex;
+    flex-direction: column;
   }
   
   .inputEmail {
     border-radius: 25px;
     padding: 15px;
     width: 250px;
+    border: 2px solid hsl(223, 100%, 88%);
+    color: var(--maintxt-gray);
+    margin-bottom: 10px;
+  }
+
+  .inputEmail:focus {
+   border: 1px solid var(--border-blue);
+  }
+
+  .inputEmailError {
+    border-radius: 25px;
+    padding: 15px;
+    width: 250px;
+    border: 2px solid var(--error-red);
+    color: var(--maintxt-gray);
+    margin-bottom: 10px;
   }
   
   .errorMessage {
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 300;
+    color: var(--error-red);
+    display: none; 
+  }
+
+  .errorMessageShow {
+    display: block;
+    font-size: 12px;
+    font-weight: 300;
+    color: var(--error-red);
   }
   
   .notifyButtonContainer {
-  
+    margin-bottom: -40px;
   }
   
   .submitButton {
     border-radius: 25px;
     padding: 15px;
-    width: 250px;  
+    width: 283px; 
+    box-shadow: 0 8px 8px -4px #ccc;
+    border: none;
+    background-color: var(--button-blue);
+    color: whitesmoke;
+    font-weight: 600;
+  }
+  .submitButton:hover {
+    background-color: var(--border-blue);
+    cursor: pointer;
   }
   
   /*===================
   Main Image
   =====================*/
-  
   .mainImg {
-  
+    margin-bottom: 90px;
+  }
+
+  .mainImg img {
+    width: auto;
+    height: 205px;
   }
   
   /*====================
@@ -114,17 +178,27 @@ html {
     display: flex;
     justify-content: space-around;
     width: 170px;
+    margin-bottom: -50px;
   }
+
   /*Centers Icons */
   .socialContainer a i {
     margin: 8px;
   }
+
   /*Icon Border  */
   .socialContainer a {
-    border: 1.5px solid firebrick;
+    border: 1.5px solid var(--maintxt-gray);
+    color: var(--button-blue);
     border-radius: 50%;
     width: 35px;
     height: 35px;
+    
+  }
+
+  .socialContainer a:hover {
+    color: whitesmoke;
+    background-color: var(--button-blue);
   }
   
   /*====================
@@ -134,6 +208,7 @@ html {
     margin: 0 auto;
     width: 100%;
     font-size: 12px;
+    color: var(--maintxt-gray);
   }
   
   /* Applies desktop styles */
@@ -144,4 +219,41 @@ html {
     .copywriteContainer {
         margin-top: 125px;
     }
+    .subNotice {
+      margin-bottom: -10px;
+    }
+    .inputEmail {
+      width: 360px;
+    }
+    .inputEmailError {
+      border-radius: 25px;
+      padding: 15px;
+      width: 360px;
+      border: 2px solid var(--error-red);
+      color: var(--maintxt-gray);
+      margin-bottom: 10px;
+    }
+    .notifyButtonContainer {
+      display: block;
+      margin-left: 15px;
+    }
+    .errorMessageShow {
+      margin-left: -155px;
+      
+    }
+    .submitButton {
+      width: 200px;
+    }
+    .mainImg img {
+      width: auto;
+      height: 350px;
+    }
+    .socialContainer a:hover {
+      color: whitesmoke;
+      background-color: var(--button-blue);
+    }
+    .copywriteContainer {
+      margin: 40px auto;
+    }
+
   }

@@ -1,66 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
-  <link rel="stylesheet" href="/styles.css">
-  <title>Frontend Mentor | Ping coming soon page</title>
-
-
-
-</head>
-<body>
-  <!--main container-->
-  <div class="flexbox-container">
-    <!-- header text-->
-        <div class="pageTextContainer">  
-          <div class=" logoImg flexbox-item">Ping</div>
-          <div class=" mainText flexbox-item">
-            <p>We are launching <strong>soon!</strong> </p>
-          </div>
-          <div class=" subNotice flexbox-item">
-            <p>Subcribe and get notified </p>
-          </div>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="/styles.css">
+    <title>Frontend Mentor | Ping coming soon page</title>
+  </head>
+  <body>
+    <!--main container-->
+    <div class="flexbox-container">
+      <!-- header text-->
+      <div class="pageTextContainer">  
+        <div class=" logoImg flexbox-item">
+          <img src="/images/logo.svg" alt="logo" srcset="">
         </div>
-          
-    <!-- userInput + error notice + button-->
-        <div class="userEmail">  
-          <div class="errorContainer">
-            <div class="userInput flexbox-item">
-              <input class="inputEmail" type="text" placeholder="Your email address..."></input>
-            </div>
-              <p class="errorMessage">Please provide a valid email address</p>
-          </div>
-          <div class="notifyButtonContainer flexbox-item">
-            <button class="submitButton" type="submit">Notify Me</button>
-          </div>
-       </div> 
-    
-    <!-- Image-->
-          <div class="mainImg flexbox-item">image</div>
-    
+        <div class=" mainText flexbox-item">
+          <p>We are launching <strong>soon!</strong> </p>
+        </div>
+        <div class=" subNotice flexbox-item">
+          <p>Subcribe and get notified </p>
+        </div>
+      </div>
+            
+    <!--userInput + error notice + button-->
+    <div class="userEmail">  
+      <div class="errorContainer">
+        <div class="userInput flexbox-item">
+          <input class="inputEmail" type="text" placeholder="Your email address..."></input>
+          <p class="errorMessage">Please provide a valid email address</p>
+        </div>
+      </div>
+      <!--notify button -->
+      <div class="notifyButtonContainer flexbox-item">
+        <button class="submitButton" type="submit">Notify Me</button>
+      </div>
+    </div> 
+      
+    <!--Image-->
+    <div class="mainImg flexbox-item">
+      <img src="/images/illustration-dashboard.png" alt="" srcset="dashboard illustration">
+    </div>
+      
     <!--Social Icons-->
-          <div class="socialContainer flexbox-item">
-            <a href ="#"><i class="fab fa-facebook-f"></i></a>
-            <a href ="#"><i class="fab fa-twitter"></i></a>
-            <a href ="#"><i class="fab fa-instagram"></i></a>
-          </div>
-        </div>
+    <div class="socialContainer flexbox-item">
+      <a href ="https://www.facebook.com/" target="_blank" rel="noopener norefer"><i class="fab fa-facebook-f"></i></a>
+      <a href ="https://twitter.com/login" target="_blank" rel="noopener norefer"><i class="fab fa-twitter"></i></a>
+      <a href ="https://www.instagram.com/accounts/login/" target="_blank" rel="noopener norefer"><i class="fab fa-instagram"></i></a>
+    </div>
       
     <!--Copywrite-->
-        <div class="copywriteContainer flexbox-item">
-          <span>&copy;Copyright Ping. All rights reserved.</span>
-        </div>
+    <div class="footerWrapper">
+      <footer class="copywriteContainer flexbox-item">
+        <span>&copy;Copyright Ping. All rights reserved.</span>
+        <!-- <p class="attribution">
+          Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+          Coded by <a href="#">Your Name Here</a>.
+        </p> -->
+      </footer>
+    </div>
 
-  <!-- <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
-  </footer> -->
-  <script src="/script.js"></script>
-</body>
+  </div>
+    <script src="/script.js"></script>
+  </body>
 </html>
