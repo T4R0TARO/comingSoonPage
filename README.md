@@ -32,7 +32,7 @@ Users should be able to:
 ### Screenshot
 ![image](https://user-images.githubusercontent.com/76195521/132763579-9b29f16a-27fa-49fc-a0ae-5ebf46215408.png)
 
-![image](https://user-images.githubusercontent.com/76195521/132763702-9f0972fd-9ae1-4a58-8ac2-029ff85212a9.png)
+![image](https://user-images.githubusercontent.com/76195521/132764210-97c47278-51bc-46c1-8515-ade44447a0cb.png)
 
 ![image](https://user-images.githubusercontent.com/76195521/132763702-9f0972fd-9ae1-4a58-8ac2-029ff85212a9.png)
 
