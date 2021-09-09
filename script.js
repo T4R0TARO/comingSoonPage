@@ -14,13 +14,12 @@ function emailValidation() {
         notifyButton.style.backgroundColor = '#3dd28d';
         alert('Thank you');
         
-    } else if  (regx.test(userInput) == false) {
+    } else if (regx.test(userInput) !== true) {
         error.className = "errorMessageShow";
         inputborder.className = "inputEmailError";
         notifyButton.style.backgroundColor = 'hsl(223, 87%, 63%)';
     } else {
-        error.className = "errorMessage";
-        inputborder.className = "inputEmail";
+       
     }
 }
 
